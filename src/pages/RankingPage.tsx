@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import { List, DotLoading } from "antd-mobile";
+import { SmileOutline } from "antd-mobile-icons";
 
 interface RankingItem {
   name: string;
@@ -36,7 +37,12 @@ const RankingPage = () => {
       ) : (
         <List mode="card" header="رده بندی">
           {data.map((item, index) => (
-            <List.Item title={index + 1} extra={item.score} key={index}>
+            <List.Item
+              title={index + 1}
+              prefix={index < 3 ? <SmileOutline /> : null}
+              extra={item.score}
+              key={index}
+            >
               {item.name}
             </List.Item>
           ))}
