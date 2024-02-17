@@ -5,6 +5,7 @@ import {
   HistogramOutline,
   InformationCircleOutline,
   RightOutline,
+  ShrinkOutline,
 } from "antd-mobile-icons";
 import { Link } from "react-router-dom";
 const back = () =>
@@ -20,7 +21,7 @@ const right = (
       </Link>
 
       <Link to={"/game"}>
-        <GiftOutline />
+        <ShrinkOutline />
       </Link>
 
       <Link to={"/invite"}>
