@@ -53,11 +53,8 @@ const Nav = () => {
       left={left}
       backArrow={<RightOutline color="var(--adm-color-primary)" />}
       right={right}
-      back={"برگشت"}
       onBack={back}
-    >
-      سلام
-    </NavBar>
+    ></NavBar>
   );
 };
 
