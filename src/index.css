@@ -1,5 +1,6 @@
 :root {
-  font-family: Vazirmatn, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Vazirmatn UI FD", system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   line-height: 1.5;
 }
 p {
@@ -26,7 +27,7 @@ div,
 .ant-btn,
 h1,
 h5 {
-  font-family: Vazirmatn !important;
+  font-family: "Vazirmatn UI FD" !important;
 }
 
 .image-container {
