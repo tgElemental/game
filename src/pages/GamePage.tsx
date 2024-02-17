@@ -1,11 +1,11 @@
 import Nav from "../components/Nav";
-const HomePage = () => {
+const GamePage = () => {
   return (
     <>
       <Nav />
-      <h1>صفحه شروع</h1>
+      <h1>صفحه بازی</h1>
     </>
   );
 };
 
-export default HomePage;
+export default GamePage;
