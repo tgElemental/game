@@ -30,7 +30,9 @@ const RankingPage = () => {
     <>
       <Nav />
       {loading ? (
-        <DotLoading />
+        <span style={{ fontSize: 24 }}>
+          <DotLoading />
+        </span>
       ) : (
         <List mode="card" header="رده بندی">
           {data.map((item, index) => (

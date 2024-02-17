@@ -56,7 +56,9 @@ const ElementsPage = () => {
       <Nav />
       <h1>صفحه عناصر</h1>
       {isLoading ? (
-        <DotLoading /> // Show the loading indicator when data is being fetched
+        <span style={{ fontSize: 24 }}>
+          <DotLoading />
+        </span>
       ) : scoreData ? (
         <>
           <Divider
