@@ -1,4 +1,4 @@
-import { Avatar, Button, NavBar, Space, Toast } from "antd-mobile";
+import { Avatar, NavBar, Space, Toast } from "antd-mobile";
 import {
   AppstoreOutline,
   GiftOutline,
@@ -16,48 +16,23 @@ const right = (
   <div style={{ fontSize: 24 }}>
     <Space style={{ "--gap": "16px" }}>
       <Link to={"/help"}>
-        <Button>
-          <Space>
-            <InformationCircleOutline color="var(--adm-color-primary)" />
-            <span>راهنما</span>
-          </Space>
-        </Button>
+        <InformationCircleOutline color="var(--adm-color-primary)" />
       </Link>
 
       <Link to={"/game"}>
-        <Button>
-          <Space>
-            <GiftOutline />
-            <span>بازی</span>
-          </Space>
-        </Button>
+        <GiftOutline />
       </Link>
 
       <Link to={"/invite"}>
-        <Button>
-          <Space>
-            <GiftOutline />
-            <span>دعوت</span>
-          </Space>
-        </Button>
+        <GiftOutline />
       </Link>
 
       <Link to={"/ranking"}>
-        <Button>
-          <Space>
-            <HistogramOutline />
-            <span>رده بندی</span>
-          </Space>
-        </Button>
+        <HistogramOutline />
       </Link>
 
       <Link to={"/elements"}>
-        <Button>
-          <Space>
-            <AppstoreOutline />
-            <span>عناصر</span>
-          </Space>
-        </Button>
+        <AppstoreOutline />
       </Link>
     </Space>
   </div>
