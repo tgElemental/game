@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import WebApp from "@twa-dev/sdk";
-import { Card, DotLoading, Grid } from "antd-mobile";
+import { Card, Divider, DotLoading, Grid } from "antd-mobile";
 import data from "@emoji-mart/data";
 import { init } from "emoji-mart";
 init({ data });
@@ -58,14 +58,22 @@ const ElementsPage = () => {
       {isLoading ? (
         <DotLoading /> // Show the loading indicator when data is being fetched
       ) : scoreData ? (
-        <div>
-          <h2>User Score</h2>
-
+        <>
+          <Divider
+            style={{
+              color: "#1677ff",
+              borderColor: "#1677ff",
+              borderStyle: "dashed",
+            }}
+          >
+            <em-emoji id="sunny"></em-emoji> دارایی{" "}
+            <em-emoji id="deciduous_tree"></em-emoji>
+          </Divider>
           <Grid columns={2} gap={8}>
             <Grid.Item span={2}>
               <Card
                 bodyStyle={{ background: "#eee" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="moneybag"></em-emoji>}
                 title="امتیاز"
               >
@@ -75,7 +83,7 @@ const ElementsPage = () => {
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="deciduous_tree"></em-emoji>}
                 title="درخت"
               >
@@ -85,17 +93,32 @@ const ElementsPage = () => {
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="sunny"></em-emoji>}
                 title="نور"
               >
                 {scoreData["0"].light.toString()}
               </Card>
             </Grid.Item>
+            <Grid.Item span={2}>
+              <Divider
+                style={{
+                  color: "#1677ff",
+                  borderColor: "#1677ff",
+                  borderStyle: "dashed",
+                }}
+              >
+                <em-emoji id="fire"></em-emoji>{" "}
+                <em-emoji id="droplet"></em-emoji> عناصر{" "}
+                <em-emoji id="wind_blowing_face"></em-emoji>{" "}
+                <em-emoji id="large_brown_circle"></em-emoji>
+              </Divider>
+            </Grid.Item>
+
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="droplet"></em-emoji>}
                 title="آب"
               >
@@ -105,7 +128,7 @@ const ElementsPage = () => {
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="wind_blowing_face"></em-emoji>}
                 title="باد"
               >
@@ -115,7 +138,7 @@ const ElementsPage = () => {
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="fire"></em-emoji>}
                 title="آتش"
               >
@@ -125,7 +148,7 @@ const ElementsPage = () => {
             <Grid.Item>
               <Card
                 bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd" }}
+                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
                 extra={<em-emoji id="large_brown_circle"></em-emoji>}
                 title="خاک"
               >
@@ -134,7 +157,7 @@ const ElementsPage = () => {
             </Grid.Item>
           </Grid>
           <p>User ID: {scoreData["0"].userid}</p>
-        </div>
+        </>
       ) : null}
     </>
   );
