@@ -18,7 +18,9 @@ import ElementsPage from "./pages/ElementsPage";
 
 function App() {
   WebApp.ready();
-  WebApp.setBackgroundColor("#ffffff");
+  WebApp.setBackgroundColor("#C3B091");
+  WebApp.setHeaderColor("#C3B091");
+  WebApp.enableClosingConfirmation;
   WebApp.BackButton.show();
   WebApp.MainButton.show();
   WebApp.MainButton.onClick(() => {
