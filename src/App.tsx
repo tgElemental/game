@@ -21,7 +21,11 @@ function App() {
   WebApp.setBackgroundColor("#ffffff");
   WebApp.BackButton.show();
   WebApp.MainButton.show();
+  WebApp.MainButton.onClick(() => {
+    WebApp.openTelegramLink("https://t.me/ElementalGameBot");
+  });
   WebApp.MainButton.setText("بازی");
+
   const LocationAwareComponent = () => {
     const location = useLocation();
     return (
