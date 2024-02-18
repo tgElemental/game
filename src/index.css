@@ -53,15 +53,31 @@ h5 {
   margin-right: var(--gap-horizontal);
 }
 
+.suntreeCardHeader {
+  background: #1eb180;
+}
+
+.suntreeCardHeader .adm-card-header-title,
 .elementsCardHeader .adm-card-header-title {
   margin: 0 auto -50px auto;
 }
 .elementsCardHeader {
-  background: pink;
+  background: #3b5999;
 }
 
 .elementsCardBody {
-  background: red;
+  background: #ffffff;
   padding: 50px;
-  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 1px #ccc;
+}
+
+.suntreeCardHeader .adm-card-header-title .emoji-mart-emoji span,
+.elementsCardHeader .adm-card-header-title .emoji-mart-emoji span {
+  border-radius: 50%;
+  margin: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: solid 1px #3b5999;
+  box-shadow: 10px 10px 20px 0px #14213c;
 }

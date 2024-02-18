@@ -84,7 +84,7 @@ const ElementsPage = () => {
             </Grid.Item>
             <Grid.Item>
               <Card
-                headerClassName="elementsCardHeader"
+                headerClassName="suntreeCardHeader"
                 bodyClassName="elementsCardBody"
                 title={<em-emoji id="deciduous_tree" Size="5em"></em-emoji>}
               >
@@ -93,7 +93,7 @@ const ElementsPage = () => {
             </Grid.Item>
             <Grid.Item>
               <Card
-                headerClassName="elementsCardHeader"
+                headerClassName="suntreeCardHeader"
                 bodyClassName="elementsCardBody"
                 title={<em-emoji id="sunny" Size="5em"></em-emoji>}
               >
