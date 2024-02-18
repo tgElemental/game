@@ -22,12 +22,12 @@ function App() {
   WebApp.setHeaderColor("#C3B091");
   WebApp.enableClosingConfirmation;
   WebApp.BackButton.show();
-  WebApp.MainButton.show();
+  WebApp.MainButton.color = "#C3B091";
   WebApp.MainButton.onClick(() => {
     WebApp.openTelegramLink("https://t.me/ElementalGameBot");
   });
   WebApp.MainButton.setText("بازی");
-
+  WebApp.MainButton.show();
   const LocationAwareComponent = () => {
     const location = useLocation();
     return (
