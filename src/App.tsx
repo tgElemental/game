@@ -19,6 +19,11 @@ import ElementsPage from "./pages/ElementsPage";
 function App() {
   WebApp.ready();
   WebApp.setBackgroundColor("#ffffff");
+  WebApp.MainButton.show();
+  WebApp.MainButton.setText("بازی");
+  WebApp.MainButton.onClick(() => {
+    WebApp.openTelegramLink("https://t.me/ElementalGameBot");
+  });
   const LocationAwareComponent = () => {
     const location = useLocation();
     return (
