@@ -19,15 +19,13 @@ import ElementsPage from "./pages/ElementsPage";
 
 function App() {
   const navigate = useNavigate();
-  const location = useLocation();
+
   WebApp.ready();
   WebApp.setBackgroundColor("#ffffff");
-  location.state?.from
-    ? (WebApp.BackButton.show(),
-      WebApp.BackButton.onClick(() => {
-        navigate(-1);
-      }))
-    : WebApp.BackButton.hide();
+  WebApp.BackButton.show(),
+    WebApp.BackButton.onClick(() => {
+      navigate(-1);
+    });
   WebApp.MainButton.show();
   WebApp.MainButton.setText("بازی");
   WebApp.MainButton.onClick(() => {
