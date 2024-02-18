@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -17,8 +18,16 @@ import RankingPage from "./pages/RankingPage";
 import ElementsPage from "./pages/ElementsPage";
 
 function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
   WebApp.ready();
   WebApp.setBackgroundColor("#ffffff");
+  location.state?.from
+    ? (WebApp.BackButton.show(),
+      WebApp.BackButton.onClick(() => {
+        navigate(-1);
+      }))
+    : WebApp.BackButton.hide();
   WebApp.MainButton.show();
   WebApp.MainButton.setText("بازی");
   WebApp.MainButton.onClick(() => {
