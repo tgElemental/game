@@ -71,7 +71,7 @@ const ElementsPage = () => {
             <em-emoji id="sunny"></em-emoji> دارایی{" "}
             <em-emoji id="deciduous_tree"></em-emoji>
           </Divider>
-          <Grid columns={2} gap={8}>
+          <Grid columns={2} gap={[0, 24]}>
             <Grid.Item span={2}>
               <Card
                 bodyStyle={{ background: "#eee" }}
