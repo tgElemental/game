@@ -79,27 +79,25 @@ const ElementsPage = () => {
                 extra={<em-emoji id="moneybag"></em-emoji>}
                 title="امتیاز"
               >
-                {scoreData["0"].score.toString()}
+                <h2>{scoreData["0"].score.toString()}</h2>
               </Card>
             </Grid.Item>
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="deciduous_tree"></em-emoji>}
-                title="درخت"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="deciduous_tree" Size="5em"></em-emoji>}
               >
-                {scoreData["0"].tree.toString()}
+                <h3>{scoreData["0"].tree.toString()}</h3>
               </Card>
             </Grid.Item>
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="sunny"></em-emoji>}
-                title="نور"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="sunny" Size="5em"></em-emoji>}
               >
-                {scoreData["0"].light.toString()}
+                <h4>{scoreData["0"].light.toString()}</h4>
               </Card>
             </Grid.Item>
             <Grid.Item span={2}>
@@ -119,40 +117,36 @@ const ElementsPage = () => {
 
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="droplet"></em-emoji>}
-                title="آب"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="droplet" Size="5em"></em-emoji>}
               >
                 {scoreData["0"].water.toString()}
               </Card>
             </Grid.Item>
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="wind_blowing_face"></em-emoji>}
-                title="باد"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="wind_blowing_face" Size="5em"></em-emoji>}
               >
                 {scoreData["0"].wind.toString()}
               </Card>
             </Grid.Item>
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="fire"></em-emoji>}
-                title="آتش"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="fire" Size="5em"></em-emoji>}
               >
                 {scoreData["0"].fire.toString()}
               </Card>
             </Grid.Item>
             <Grid.Item>
               <Card
-                bodyStyle={{ background: "#ccc" }}
-                headerStyle={{ background: "#ddd", padding: "5px 15px" }}
-                extra={<em-emoji id="large_brown_circle"></em-emoji>}
-                title="خاک"
+                headerClassName="elementsCardHeader"
+                bodyClassName="elementsCardBody"
+                title={<em-emoji id="large_brown_circle" Size="5em"></em-emoji>}
               >
                 {scoreData["0"].earth.toString()}
               </Card>

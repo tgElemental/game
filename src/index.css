@@ -52,3 +52,16 @@ h5 {
   margin-left: 0;
   margin-right: var(--gap-horizontal);
 }
+
+.elementsCardHeader .adm-card-header-title {
+  margin: 0 auto -50px auto;
+}
+.elementsCardHeader {
+  background: pink;
+}
+
+.elementsCardBody {
+  background: red;
+  padding: 50px;
+  border: none;
+}
