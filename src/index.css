@@ -47,3 +47,8 @@ h5 {
 .texty.mask-top {
   overflow: hidden;
 }
+
+.adm-space-horizontal > .adm-space-item:last-child {
+  margin-left: 0;
+  margin-right: var(--gap-horizontal);
+}
