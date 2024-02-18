@@ -22,10 +22,10 @@ function App() {
 
   WebApp.ready();
   WebApp.setBackgroundColor("#ffffff");
-  WebApp.BackButton.show(),
-    WebApp.BackButton.onClick(() => {
-      navigate(-1);
-    });
+  WebApp.BackButton.show();
+  WebApp.BackButton.onClick(() => {
+    navigate(-1);
+  });
   WebApp.MainButton.show();
   WebApp.MainButton.setText("بازی");
   WebApp.MainButton.onClick(() => {
