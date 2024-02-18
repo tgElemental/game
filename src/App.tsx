@@ -22,9 +22,6 @@ function App() {
   WebApp.BackButton.show();
   WebApp.MainButton.show();
   WebApp.MainButton.setText("بازی");
-  WebApp.MainButton.onClick(() => {
-    WebApp.openTelegramLink("https://t.me/ElementalGameBot");
-  });
   const LocationAwareComponent = () => {
     const location = useLocation();
     return (
